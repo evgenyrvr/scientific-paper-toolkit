@@ -1,0 +1,37 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+% Replace with your paper title, authors, date
+\title{[Paper Title]}
+\author{[Author Name(s)] \\ [Institution]}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+[Abstract — write last, after all sections are verified.
+Target: 150–250 words.
+Must state: (1) the physical question, (2) the method/data, (3) the main result with numbers, (4) one implication.]
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\input{sections/01_introduction}
+\input{sections/02_background}
+\input{sections/03_theory}
+\input{sections/04_results}
+\input{sections/05_discussion}
+\input{sections/06_conclusion}
+
+\bibliographystyle{aasjournal}  % or plainnat, apj, etc.
+\bibliography{references/references}
+
+\end{document}
